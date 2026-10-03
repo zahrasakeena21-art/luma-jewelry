@@ -1,1 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Luma Jewelry | Timeless Elegance</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP ANNOUNCEMENT -->
+    <div class="announcement">
+        ✦ Timeless elegance, made for you ✦
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="#" class="logo-link">
+            <img src="logo.png" alt="Luma Jewelry Logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" onclick="openCart()">
+            🛒 <span id="cart-count">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">TIMELESS ELEGANCE</p>
+
+            <h1>
+                Jewellery for
+                <br>
+                Every Chapter
+            </h1>
+
+            <p>
+                Discover elegant pieces designed
+                to become part of your story.
+            </p>
+
+            <a href="#shop" class="main-button">
+                SHOP NOW →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+
+        <div class="benefit">
+            <span>◇</span>
+            <div>
+                <strong>Premium Quality</strong>
+                <p>Made with care</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span>♢</span>
+            <div>
+                <strong>Elegant Designs</strong>
+                <p>Timeless pieces</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span>♡</span>
+            <div>
+                <strong>Made for You</strong>
+                <p>Jewellery to treasure</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <span>✓</span>
+            <div>
+                <strong>Secure Shopping</strong>
+                <p>Shop with confidence</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- SHOP -->
+    <section class="shop" id="shop">
+
+        <p class="small-title">OUR COLLECTION</p>
+
+        <h2>Featured Jewellery</h2>
+
+        <p class="section-description">
+            Discover pieces chosen to add a touch of elegance to every look.
+        </p>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="images/Ring1.jpg" alt="Luma Jewelry Ring">
+                </div>
+
+                <h3>Elegant Ring</h3>
+
+                <p class="price">AED 99</p>
+
+                <button
+                    class="add-button"
+                    onclick="addToCart('Elegant Ring', 99, 'images/Ring1.jpg')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="images/Necklace1.jpg" alt="Luma Jewelry Necklace">
+                </div>
+
+                <h3>Classic Necklace</h3>
+
+                <p class="price">AED 129</p>
+
+                <button
+                    class="add-button"
+                    onclick="addToCart('Classic Necklace', 129, 'images/Necklace1.jpg')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="images/Bracelet1.jpg" alt="Luma Jewelry Bracelet">
+                </div>
+
+                <h3>Elegant Bracelet</h3>
+
+                <p class="price">AED 119</p>
+
+                <button
+                    class="add-button"
+                    onclick="addToCart('Elegant Bracelet', 119, 'images/Bracelet1.jpg')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+            <div class="product">
+
+                <div class="product-image">
+                    <img src="images/Earrings1.jpg" alt="Luma Jewelry Earrings">
+                </div>
+
+                <h3>Classic Earrings</h3>
+
+                <p class="price">AED 89</p>
+
+                <button
+                    class="add-button"
+                    onclick="addToCart('Classic Earrings', 89, 'images/Earrings1.jpg')">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-text">
+
+            <p class="small-title">THE LUMA STORY</p>
+
+            <h2>More Than Just Jewellery</h2>
+
+            <p>
+                At Luma Jewelry, we believe jewellery is more
+                than an accessory. It is part of your story,
+                your moments and the memories you carry with you.
+            </p>
+
+            <p>
+                Every piece is chosen with elegance,
+                simplicity and timeless beauty in mind.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <p class="small-title">GET IN TOUCH</p>
+
+        <h2>We'd Love to Hear From You</h2>
+
+        <p>
+            Have a question about an order or a product?
+            Contact Luma Jewelry.
+        </p>
+
+        <div class="contact-buttons">
+
+            <a href="#" class="contact-button">
+                Instagram
+            </a>
+
+            <a href="#" class="contact-button">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CART -->
+    <div id="cart-overlay" class="cart-overlay">
+
+        <div class="cart">
+
+            <button class="close-cart" onclick="closeCart()">×</button>
+
+            <h2>Your Cart</h2>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                Total: AED <span id="cart-total">0</span>
+            </div>
+
+            <button class="checkout-button" onclick="checkout()">
+                CHECKOUT
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <img src="logo.png" alt="Luma Jewelry">
+
+        <p>© 2026 Luma Jewelry. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
